@@ -15,10 +15,10 @@ minetest.register_chatcommand("report", {
 		-- Get comma separated list of online moderators and admins
 		local mods = {}
 		for _, player in pairs(minetest.get_connected_players()) do
-			local name = player:get_player_name()
-			if minetest.check_player_privs(name, {kick = true, ban = true}) then
-				table.insert(mods, name)
-				minetest.chat_send_player(name, "-!- " .. name .. " reported: " .. param)
+			local toname = player:get_player_name()
+			if minetest.check_player_privs(toname, {kick = true, ban = true}) then
+				table.insert(mods, toname)
+				minetest.chat_send_player(toname, "-!- " .. name .. " reported: " .. param)
 			end
 		end
 
