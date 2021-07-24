@@ -1,3 +1,22 @@
+local function save_modo(name)
+
+end
+
+local function get_modo_list()
+
+end
+
+minetest.register_on_joinplayer(function(player)
+		-- 1. Obtenir la liste des modérateur connus
+		--    local modo_saved = get_modo_list()
+		-- 2. Obtenir les privs du player
+		-- 3. Si player n'est pas dans la liste modos connus et a privs modos alors
+		-- 4.  Ajouter nom du player dans liste modos connus
+		-- 5. Sinon si player est dans liste modos connus et n'a pas privs modos alors
+		-- 6.  Supprimer nom du player de la liste modos connus.
+		-- 7. Fin
+end)
+
 minetest.register_chatcommand("report", {
 	func = function(name, param)
 		param = param:trim()
