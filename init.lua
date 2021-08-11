@@ -87,7 +87,7 @@ minetest.register_chatcommand("report", {
 			end
 			return true, S("Reported. Online moderator(s): @1", mod_list)
 		else
-			email.send_mail(name, admin, S("Report:  (no online moderator)", param))
+			email.send_mail(name, admin, S("Report: @1 (no online moderator)", param))
 			for _, modo in ipairs(get_modo_list()) do
 				if modo ~= admin then
 					email.send_mail(name, modo, S("Report: @1 (no online moderator)", param))
