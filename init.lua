@@ -8,7 +8,6 @@ local function get_modo_list()
 	if store then
 		return minetest.deserialize(store) or {}
 	end
-
 	return nil
 end
 
@@ -22,21 +21,19 @@ local function is_known_modo(name)
 end
 
 minetest.register_on_joinplayer(function(player)
-	-- Obtenir les privs du player
+	-- Get player privs
 	local player_name = player:get_player_name()
 	local is_modo = minetest.check_player_privs(player_name, {kick = true, ban = true})
 
-	-- Le joueur est-il un modérateur connu ?
+	-- Is player a known moderator?
 	local known = is_known_modo(player_name)
 
-	-- Ajouter ou supprimer le joueur de la liste des modérateurs
+	-- Add or remove the player to/from moderators list
 	if not known and is_modo then
-		-- Ajouter nom du player dans liste modos
 		local modos = get_modo_list()
 		table.insert(modos, player_name)
 		storage:set_string("report", minetest.serialize(modos))
 	elseif known and not is_modo then
-		-- Supprimer nom du player de la liste modos
 		local modos = get_modo_list()
 		for i, modo in ipairs(modos) do
 			if modo == player_name then
@@ -49,14 +46,14 @@ minetest.register_on_joinplayer(function(player)
 end)
 
 minetest.register_chatcommand("report", {
-	description = S("Report: @1 to see moderators list. @2 is the message to report to moderators.", "'modos'", "'msg'"),
-	params = "modos|msg",
+	description = S("Send a report to moderators. '/report modos_list' to get the list of moderators."),
+	params = "<msg>",
 	func = function(name, param)
 		param = param:trim()
 		if param == "" then
 			return false, S("Please write a message for the report. If it's about one or several players in particular, please give their name.")
 		end
-		if param == "modos" then
+		if param == "modos_list" then
 			return true, S("Moderators list: @1", table.concat(get_modo_list(), ", "))
 		end
 		local _, count = string.gsub(param, " ", "")

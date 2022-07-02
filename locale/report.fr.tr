@@ -1,5 +1,5 @@
 # textdomain:report
-Report: @1 to see moderators list. @2 is the message to report to moderators.=Report: @1 pour voir la liste des modérateurs. @2 est le message à rapporter aux modérateurs.
+Send a report to moderators. '/report modos_list' to get the list of moderators.=Envoie un rapport aux modérateurs. '/report modos_list' pour obtenir la liste des modérateurs.
 Please write a message for the report. If it's about one or several players in particular, please give their name.=Veuillez écrire un message pour le rapport. Si il s'agit d'un ou plusieurs joueurs en particulier, veuillez aussi indiquer leur nom.
 Moderators list: @1=Liste de modérateurs : @1
 If you are reporting a player's attitude, you should also say why. (Ex: insult, sabotage)=Si vous rapportez l'attitude d'un joueur, vous devriez aussi dire quelle en est la raison. (Ex: insulte, sabotage)
