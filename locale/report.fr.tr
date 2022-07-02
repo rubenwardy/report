@@ -1,0 +1,10 @@
+# textdomain:report
+Report: @1 to see moderators list. @2 is the message to report to moderators.=Report: @1 pour voir la liste des modérateurs. @2 est le message à rapporter aux modérateurs.
+Please write a message for the report. If it's about one or several players in particular, please give their name.=Veuillez écrire un message pour le rapport. Si il s'agit d'un ou plusieurs joueurs en particulier, veuillez aussi indiquer leur nom.
+Moderators list: @1=Liste de modérateurs : @1
+If you are reporting a player's attitude, you should also say why. (Ex: insult, sabotage)=Si vous rapportez l'attitude d'un joueur, vous devriez aussi dire quelle en est la raison. (Ex: insulte, sabotage)
+-!- @1 has reported: @2=-!- @1 a rapporté : @2
+Report: @1 (online moderator(s): @2)=Rapport : @1 (moderateur(s) connecté(s) : @2)
+Reported. Online moderator(s): @1=Rapporté. Moderateur(s) connecté(s) : @1
+Report: @1 (no online moderator)=Rapport : @1 (pas de modérateur connecté)
+Reported. We will get back to you.=Rapporté. On reviendra vers vous.
