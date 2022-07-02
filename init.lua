@@ -97,5 +97,3 @@ minetest.register_chatcommand("report", {
 		end
 	end
 })
-
-minetest.log("action", "[report] loaded.")
