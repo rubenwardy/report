@@ -1,0 +1,10 @@
+# textdomain:report
+Send a report to moderators. '/report modos_list' to get the list of moderators.=
+Please write a message for the report. If it's about one or several players in particular, please give their name.=
+Moderators list: @1=
+If you are reporting a player's attitude, you should also say why. (Ex: insult, sabotage)=
+-!- @1 has reported: @2=
+Report: @1 (online moderator(s): @2)=
+Reported. Online moderator(s): @1=
+Report: @1 (no online moderator)=
+Reported. We will get back to you.=
